@@ -19,20 +19,19 @@ elevul cu media cea mai mare.
         private string NumeClasa;
         private List<Elev> Elevi;
 
-        // Constructor
         public Catalog(string numeClasa)
         {
             NumeClasa = numeClasa;
             Elevi = new List<Elev>();
         }
 
-        // Adaugă un elev în catalog
+        // Adauga un elev în catalog
         public void AdaugaElev(Elev elev)
         {
             Elevi.Add(elev);
         }
 
-        // Returnează un șir cu numele clasei și al fiecărui elev în parte
+        // Returneaza un air cu numele clasei și al fiecarui elev in parte
         public string ConversieLaSir()
         {
             string rezultat = $"Clasa: {NumeClasa}\n";
@@ -43,12 +42,12 @@ elevul cu media cea mai mare.
             return rezultat;
         }
 
-        // Returnează elevul cu media cea mai mare
+        // Returneaza elevul cu media cea mai mare
         public Elev GetPremiantul()
         {
             if (Elevi.Count == 0)
             {
-                Console.WriteLine("Nu există elevi în catalog.");
+                Console.WriteLine("Nu exista elevi in catalog.");
                 return null;
             }
 

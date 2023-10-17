@@ -62,7 +62,7 @@ acces, clase.
             elev3.AdaugaNota(6);
             catalog.AdaugaElev(elev3);
 
-            // Afișează detalii despre catalog și premiant
+            // Afiseaza detalii despre catalog si premiant
             Console.WriteLine(catalog.ConversieLaSir());
             Elev premiant = catalog.GetPremiantul();
             if (premiant != null)
