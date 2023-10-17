@@ -51,11 +51,6 @@ nota0 nota1 nota2…. Notam
             return suma / Note.Count;
         }
 
-        /*public string ConversieLaSir()
-        {
-            return $"{Nume}, {Prenume}, Note: {string.Join(", ", Note)}";
-        }*/
-
     public string ConversieLaSir()
         {
             StringBuilder noteStringBuilder = new StringBuilder();

@@ -40,6 +40,36 @@ obiectelor si afisati-le rezultatele.
 • Atentie la : constructori, modificatori de
 acces, clase.
             */
+
+            Catalog catalog = new Catalog("Clasa a XII-a");
+
+            // Adaugă elevi în catalog
+            Elev elev1 = new Elev("Popescu", "Ion");
+            elev1.AdaugaNota(9);
+            elev1.AdaugaNota(8);
+            elev1.AdaugaNota(7);
+            catalog.AdaugaElev(elev1);
+
+            Elev elev2 = new Elev("Ionescu", "Maria");
+            elev2.AdaugaNota(10);
+            elev2.AdaugaNota(9);
+            elev2.AdaugaNota(8);
+            catalog.AdaugaElev(elev2);
+
+            Elev elev3 = new Elev("Vitanescu", "Emil");
+            elev3.AdaugaNota(7);
+            elev3.AdaugaNota(5);
+            elev3.AdaugaNota(6);
+            catalog.AdaugaElev(elev3);
+
+            // Afișează detalii despre catalog și premiant
+            Console.WriteLine(catalog.ConversieLaSir());
+            Elev premiant = catalog.GetPremiantul();
+            if (premiant != null)
+            {
+                Console.WriteLine($"Premiantul clasei este: {premiant.Nume} {premiant.Prenume} cu media: {premiant.CalculeazaMedie()}");
+            }
         }
     }
-}
+    }
+
