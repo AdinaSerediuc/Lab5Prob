@@ -25,13 +25,13 @@ elevul cu media cea mai mare.
             Elevi = new List<Elev>();
         }
 
-        // Adauga un elev în catalog
+        // Adauga un elev in catalog
         public void AdaugaElev(Elev elev)
         {
             Elevi.Add(elev);
         }
 
-        // Returneaza un air cu numele clasei și al fiecarui elev in parte
+        // Returneaza un air cu numele clasei si al fiecarui elev in parte
         public string ConversieLaSir()
         {
             string rezultat = $"Clasa: {NumeClasa}\n";
